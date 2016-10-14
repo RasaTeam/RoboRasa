@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '2'
+VERSION = '1.0'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -297,109 +297,116 @@ official channel of rasa @RCT_channel
 + دریافت یک فایل از وقایع یک گروه/محدوده
 ]],
     help_text = [[
-Commands list :
+		🔰راهنمای دستورات ربات راسا🔰
 
-!kick [username|id]
-You can also do it by reply
 
-!ban [ username|id]
-You can also do it by reply
+🛡Kick (ریپلای / یوزرنیم / آیدی)
++ جهت اخراج کردن یک فرد/ربات از گروه
 
-!unban [id]
-You can also do it by reply
+🛡 Ban (ریپلای / یوزرنیم / آیدی)
++ جهت محروم کردن یک فرد /ربات از گروه
 
-!who
-Members list
+🛡 Unban (ریپلای / یوزرنیم / آیدی)
++ جهت آزاد کردن یک فرد/ربات از محرومیت
 
-!modlist
-Moderators list
+🛡 Who
++ دریافت لیست اعضای گروه
 
-!promote [username]
-Promote someone
+🛡 Modlist 
++ دریافت لیست مدیران ربات
 
-!demote [username]
-Demote someone
+🛡 Promote (یوزرنیم)
++ دادن مقام به یک فرد در یک گروه
 
-!kickme
-Will kick user
+🛡 Demote (یوزرنیم) 
++ سلب مقام از یک فرد در یک گروه
 
-!about
-Group description
+🛡 Kickme
++ جهت خروج از گروه
 
-!setphoto
-Set and locks group photo
+🛡 About
++ دریافت متن درباره گروه
 
-!setname [name]
-Set group name
+🛡 Setphoto
++ جهت تعیین و یا تعویض کردن نمایه گروه
 
-!rules
-Group rules
+🛡 Setname (نام)
++ جهت تعیین و یا تعویض نام گروه
 
-!id
-Return group id or user id
+🛡 Rules
++ جهت دریافت متن قوانین گروه
 
-!help
-Get commands list
+🛡 Id
++ جهت دریافت آیدی شخص/گروه
 
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
+🛡 Help
++ جهت دریافت راهنمای ربات
 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
+🛡 Lock (member/ name / photo / bots / leave)
++ جهت قفل کردن (اعضا / نام / نمایه / رباتها / خروج)
 
-!set rules [text]
-Set [text] as rules
+🛡 Unlock (member/ name / photo / bots / leave)
++ جهت باز کردن (اعضا / نام / نمایه / رباتها / خروج)
 
-!set about [text]
-Set [text] as about
+🛡 Set rules (متن)
++ تنظیم متن قوانین گروه
 
-!settings
-Returns group settings
+🛡 Set about (متن)
++ تنظیم متن درباره گروه
 
-!newlink
-Create/revoke your group link
+🛡 Settings
++ دریافت تنظیمات گروه
 
-!link
-Returns group link
+🛡 Newlink
++ ساخت و یا تعیض لینک گروه
 
-!owner
-Returns group owner id
+🛡Link
++ دریافت لینک گروه
 
-!setowner [id]
-Will set id as owner
+🛡 Owner
++ دریافت اطلاعات مالک گروه
 
-!setflood [value]
-Set [value] as flood sensitivity
+🛡 Setowner (آیدی)
++ انتقال مالکیت گروه با آیدی شخص
 
-!stats
-Simple message statistics
+🛡 Setflood (عدد)
++ تنظیم حساسیت اسپم (تعداد)
 
-!save [value] [text]
-Save [text] as [value]
+🛡 Stats
++ آمار
 
-!get [value]
-Returns text of [value]
+🛡 Save (متن)(عدد)
++ ذخیره متن با عدد
 
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+🛡 Get
++ دریافت متن ذخیره شده در یک عدد
 
-!res [username]
-Returns user id
+🛡 Clean (modlist / rules / about)
++ پاک کردن لیست مدیران / قوانین / درباره
 
-!log
-Will return group logs
+🛡 Res (یوزرنیم)
++ دریافت اطلاعات از طریق یوزرنیم
 
-!banlist
-Will return group ban list
+🛡 Log
++ دریافت آمار گروه
 
-» U can use both "/" and "!" 
+🛡 Banlist
++ دریافت لیست افراد محروم شده
 
-» Only mods, owner and admin can add bots in group
 
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
 
-» Only owner can use res,setowner,promote,demote and log commands
+🔰شما میتوانید برای علائم از علامتهای ( ! ) و ( / ) استفاده کنید
 
+🔰فقط سودو ادمین و مالک گروه میتوانند ربات به گروه اضافه کنند
+
+🔰تنها سودو ادمین و مالک گروه میتوانند از عبارات kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about و settings استفاده کنند
+
+🔰در گروه به جز ادمین های اصلی تنها مالک گروه میتواند از عبارات res,setowner,promote,demote و log استفاده کند
+
+
+💻ویرایش شده توسط اعضای تیم راسا
+📲کانال رسمی: @RCT_channel
+📲سایت: www.RasaTeam.cf
 ]]
   }
   serialize_to_file(config, './data/config.lua')
