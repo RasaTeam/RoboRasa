@@ -234,94 +234,67 @@ An advance Administration bot based on yagop/telegram-bot
 
 https://github.com/SEEDTEAM/TeleSeed
 
-Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
-
+Editors:
+Dayan (@Dayan_AF)
+ZAMAN (@Z4M4N)
 Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
-Vamptacus
-
-Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+Mr.King
+Our channel:
+official channel of rasa @RCT_channel
 ]],
     help_text_realm = [[
-Realm Commands:
+		⚔راهنمای ربات #راسا برای مدیران و اعضا
 
-!creategroup [name]
-Create a group
+💠!creategroup (نام)
++ جهت ساختن یک گروه جدید توسط ربات
 
-!createrealm [name]
-Create a realm
+💠!createrealm (نام)
++ جهت ساختن یک محدوده جدید توسط ربات
 
-!setname [name]
-Set realm name
+💠!setname (نام)
++ جهت تعویض نام گروه
 
-!setabout [group_id] [text]
-Set a group's about text
+💠!setrules (متن)
++ جهت تعیین و یا تعویض قوانین گروه
 
-!setrules [grupo_id] [text]
-Set a group's rules
+💠!setabout (متن)
++ جهت تعیین و یا تعویض متن درباره گروه
 
-!lock [grupo_id] [setting]
-Lock a group's setting
+💠!lock (آیدی گروه)(setting)
++ قفل کردن تنظیمات یک گروه بر اساس آیدی گروه
 
-!unlock [grupo_id] [setting]
-Unock a group's setting
+💠!unlock (آیدی گروه)(setting)
++ باز کردن قفل کردن تنظیمات یک گروه بر اساس آیدی گروه
 
-!wholist
-Get a list of members in group/realm
+💠!wholist
++ جهت دریافت یک لیست از اطلاعات گروه/محدوده
 
-!who
-Get a file of members in group/realm
+💠!who
++ جهت دریافت یک فایل از اطلاعات گروه/محدوده
 
-!type
-Get group type
+💠!type
++ اطلاع از نوع گروه
 
-!kill chat [grupo_id]
-Kick all memebers and delete group
+💠!kill chat (آیدی گروه)
++حذف کردن تمام اعضای یک گروه و پاک کردن گروه بر اساس آیدی گروه
 
-!kill realm [realm_id]
-Kick all members and delete realm
+💠!kill realm (آیدی محدوده)
++حذف کردن تمام اعضای یک محدوده و پاک کردن محدوده بر اساس آیدی محدوده
 
-!addadmin [id|username]
-Promote an admin by id OR username *Sudo only
+💠!addadmin (یوزرنیم / آیدی)
++ اضافه کردن یک شخص بر اساس یوزرنیم/آیدی به ادمینها
 
-!removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
+💠!removeadmin (یوزرنیم / آیدی)
++ حذف کردن یک شخص بر اساس یوزرنیم/آیدی از ادمینها
 
-!list groups
-Get a list of all groups
+💠!list groups
++ دریافت یک لیست از اطلاعات تمام گروه ها
 
-!list realms
-Get a list of all realms
+💠!list realms
++ دریافت یک لیست از اطلاعات تمام محدوده ها
 
-!log
-Get a logfile of current group or realm
-
-!broadcast [text]
-!broadcast Hello !
-Send text to all groups
-» Only sudo users can run this command
-
-!bc [group_id] [text]
-!bc 123456789 Hello !
-This command will send text to [group_id]
-
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
-
+💠!log
++ دریافت یک فایل از وقایع یک گروه/محدوده
 ]],
     help_text = [[
 Commands list :
