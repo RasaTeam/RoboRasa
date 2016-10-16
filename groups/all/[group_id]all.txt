@@ -1,1 +1,1 @@
-[group_id] logs !
+💠آیدی گروه شما : [group_id] logs !
