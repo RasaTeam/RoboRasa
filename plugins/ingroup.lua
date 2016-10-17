@@ -11,12 +11,12 @@ local function check_member_autorealm(cb_extra, success, result)
       -- Group configuration
       data[tostring(msg.to.id)] = {
         group_type = 'Realm',
-        settings = {
+        🔩تنظیمات گروه ربات راسا = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
-          lock_name = 'yes',
-          lock_photo = 'no',
-          lock_member = 'no',
-          flood = 'yes'
+          ⚙نام‌گروه = '🔐',
+          ⚙نمایه‌ی گروه = '🔓',
+          ⚙قفل ورود = '🔓',
+          ⚙قفل اسپم = '🔐'
         }
       }
       save_data(_config.moderation.data, data)
@@ -41,12 +41,12 @@ local function check_member_realm_add(cb_extra, success, result)
       -- Group configuration
       data[tostring(msg.to.id)] = {
         group_type = 'Realm',
-        settings = {
+        🔩تنظیمات گروه ربات راسا = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
-          lock_name = 'yes',
-          lock_photo = 'no',
-          lock_member = 'no',
-          flood = 'yes'
+          ⚙نام‌گروه = '🔐',
+          ⚙نمایه‌ی گروه = '🔓',
+          ⚙قفل ورود = '🔓',
+          ⚙قفل اسپم = '🔐'
         }
       }
       save_data(_config.moderation.data, data)
@@ -73,12 +73,12 @@ function check_member_group(cb_extra, success, result)
         group_type = 'Group',
         moderators = {},
         set_owner = member_id ,
-        settings = {
+        🔩تنظیمات گروه ربات راسا = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
-          lock_name = 'yes',
-          lock_photo = 'no',
-          lock_member = 'no',
-          flood = 'yes',
+          ⚙نام‌گروه = '🔐',
+          ⚙نمایه‌ی گروه = '🔓',
+          ⚙قفل ورود = '🔓',
+          ⚙قفل اسپم = '🔐'
         }
       }
       save_data(_config.moderation.data, data)
@@ -105,12 +105,12 @@ local function check_member_modadd(cb_extra, success, result)
         group_type = 'Group',
         moderators = {},
         set_owner = member_id ,
-        settings = {
+        🔩تنظیمات گروه ربات راسا = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
-          lock_name = 'yes',
-          lock_photo = 'no',
-          lock_member = 'no',
-          flood = 'yes',
+          ⚙نام‌گروه = '🔐',
+          ⚙نمایه‌ی گروه = '🔓',
+          ⚙قفل ورود = '🔓',
+          ⚙قفل اسپم = '🔐'
         }
       }
       save_data(_config.moderation.data, data)
@@ -228,63 +228,63 @@ local function get_description(msg, data)
 end
 local function lock_group_arabic(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "🚫فقط ادمین ها مجاز هستند!"
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'yes' then
-    return 'Arabic is already locked'
+    return '🔐زبان فارسی در حال حاضر قفل میباشد'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Arabic has been locked'
+    return '🔐زبان فارسی قفل شد!'
   end
 end
 
 local function unlock_group_arabic(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "🚫فقط ادمین ها مجاز هستند!"
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'no' then
-    return 'Arabic is already unlocked'
+    return '🔓زبان فارسی در حال حاضر قفل نیست!'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Arabic has been unlocked'
+    return '🔓زبان فارسی مجاز شد!'
   end
 end
 
 local function lock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "🚫فقط ادمین ها مجاز هستند!"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'yes' then
-    return 'Bots protection is already enabled'
+    return '🔐اضافه کردن ربات به گروه در حال حاضر ممنوع میباشد!'
   else
     data[tostring(target)]['settings']['lock_bots'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Bots protection has been enabled'
+    return '🔐اضافه کردن ربات به گروه ممنوع شد!'
   end
 end
 
 local function unlock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "🚫فقط ادمین ها مجاز هستند!"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'no' then
-    return 'Bots protection is already disabled'
+    return '🔓اضافه کردن ربات به گروه در حال حاضر مجاز میباشد!'
   else
     data[tostring(target)]['settings']['lock_bots'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Bots protection has been disabled'
+    return '🔓اضافه کردن ربات به گروه مجاز شد!'
   end
 end
 
 local function lock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "🚫فقط ادمین ها مجاز هستند!"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
