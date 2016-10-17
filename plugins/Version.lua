@@ -2,20 +2,15 @@ do
 function run(msg)
 	send_document("chat#id"..msg.to.id,"./file/qr.webp", ok_cb, false)
 	return 'RoboRasa Telegram Bot v1.0'.. [[ 
-	
-	Website:
-	http://RasaTeam.cf
-	Antispam Bot : @RoboRasa
-	Channel : @RCT_channel
-	Sudo : @Dayan_AF
-	
-	Powered by:
-	Rasa Cyber Team
-	
-	Special Thanks:
-	Dark
-	TeleSurena
+	💻 وبسایت : http://RasaTeam.cf
 
+⚙ توسعه دهنده : https://telegram.me/Dayan_AF
+
+🛡 کانال : https://telegram.me/RCT_channel
+
+💰 قدرت گرفته از : تیم سایبری راسا
+
+🔱 با تشکر از : سازمان امنیتی دارک
 end
 
 return {
